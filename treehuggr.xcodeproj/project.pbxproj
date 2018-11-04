@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11F086F329D78E0175AA42CA /* Pods_treehuggr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261B1F73AB0CD3A244B2C273 /* Pods_treehuggr.framework */; };
 		FB4E7F48218EAD8E005BC547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4E7F47218EAD8E005BC547 /* AppDelegate.swift */; };
 		FB4E7F4A218EAD8E005BC547 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4E7F49218EAD8E005BC547 /* ViewController.swift */; };
 		FB4E7F4D218EAD8E005BC547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4E7F4B218EAD8E005BC547 /* Main.storyboard */; };
 		FB4E7F4F218EAD91005BC547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB4E7F4E218EAD91005BC547 /* Assets.xcassets */; };
 		FB4E7F52218EAD91005BC547 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4E7F50218EAD91005BC547 /* LaunchScreen.storyboard */; };
+		FB4E7F5A218EB60F005BC547 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FB4E7F59218EB60F005BC547 /* logo.png */; };
+		FB4E7F5C218EB928005BC547 /* rainforest_background.png in Resources */ = {isa = PBXBuildFile; fileRef = FB4E7F5B218EB928005BC547 /* rainforest_background.png */; };
+		FB4E7F5E218EBE24005BC547 /* PayPalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4E7F5D218EBE24005BC547 /* PayPalViewController.swift */; };
+		FB4E7F60218ECA46005BC547 /* paypal.html in Resources */ = {isa = PBXBuildFile; fileRef = FB4E7F5F218ECA46005BC547 /* paypal.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02F55917CDB86A7C7AF338A4 /* Pods-treehuggr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treehuggr.release.xcconfig"; path = "Pods/Target Support Files/Pods-treehuggr/Pods-treehuggr.release.xcconfig"; sourceTree = "<group>"; };
+		261B1F73AB0CD3A244B2C273 /* Pods_treehuggr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_treehuggr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7674F08EA758F826EF4C8ED8 /* Pods-treehuggr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treehuggr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-treehuggr/Pods-treehuggr.debug.xcconfig"; sourceTree = "<group>"; };
 		FB4E7F44218EAD8E005BC547 /* treehuggr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = treehuggr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4E7F47218EAD8E005BC547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB4E7F49218EAD8E005BC547 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,10 @@
 		FB4E7F4E218EAD91005BC547 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB4E7F51218EAD91005BC547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB4E7F53218EAD91005BC547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB4E7F59218EB60F005BC547 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		FB4E7F5B218EB928005BC547 /* rainforest_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainforest_background.png; sourceTree = "<group>"; };
+		FB4E7F5D218EBE24005BC547 /* PayPalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPalViewController.swift; sourceTree = "<group>"; };
+		FB4E7F5F218ECA46005BC547 /* paypal.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = paypal.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F086F329D78E0175AA42CA /* Pods_treehuggr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A0E225A7ACAD6B014883568 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				261B1F73AB0CD3A244B2C273 /* Pods_treehuggr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CEC4C95E57FA524D0974BA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7674F08EA758F826EF4C8ED8 /* Pods-treehuggr.debug.xcconfig */,
+				02F55917CDB86A7C7AF338A4 /* Pods-treehuggr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FB4E7F3B218EAD8E005BC547 = {
 			isa = PBXGroup;
 			children = (
 				FB4E7F46218EAD8E005BC547 /* treehuggr */,
 				FB4E7F45218EAD8E005BC547 /* Products */,
+				6CEC4C95E57FA524D0974BA1 /* Pods */,
+				6A0E225A7ACAD6B014883568 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +86,26 @@
 		FB4E7F46218EAD8E005BC547 /* treehuggr */ = {
 			isa = PBXGroup;
 			children = (
+				FB4E7F5B218EB928005BC547 /* rainforest_background.png */,
+				FB4E7F59218EB60F005BC547 /* logo.png */,
+				FB4E7F5F218ECA46005BC547 /* paypal.html */,
+				FB4E7F61218ECA78005BC547 /* ViewControllers */,
 				FB4E7F47218EAD8E005BC547 /* AppDelegate.swift */,
-				FB4E7F49218EAD8E005BC547 /* ViewController.swift */,
 				FB4E7F4B218EAD8E005BC547 /* Main.storyboard */,
 				FB4E7F4E218EAD91005BC547 /* Assets.xcassets */,
 				FB4E7F50218EAD91005BC547 /* LaunchScreen.storyboard */,
 				FB4E7F53218EAD91005BC547 /* Info.plist */,
 			);
 			path = treehuggr;
+			sourceTree = "<group>";
+		};
+		FB4E7F61218ECA78005BC547 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB4E7F49218EAD8E005BC547 /* ViewController.swift */,
+				FB4E7F5D218EBE24005BC547 /* PayPalViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB4E7F56218EAD91005BC547 /* Build configuration list for PBXNativeTarget "treehuggr" */;
 			buildPhases = (
+				EE7ECEAABB934D98F538FB46 /* [CP] Check Pods Manifest.lock */,
 				FB4E7F40218EAD8E005BC547 /* Sources */,
 				FB4E7F41218EAD8E005BC547 /* Frameworks */,
 				FB4E7F42218EAD8E005BC547 /* Resources */,
+				EA38B4D2383354089C5D595E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,6 +168,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB4E7F5C218EB928005BC547 /* rainforest_background.png in Resources */,
+				FB4E7F60218ECA46005BC547 /* paypal.html in Resources */,
+				FB4E7F5A218EB60F005BC547 /* logo.png in Resources */,
 				FB4E7F52218EAD91005BC547 /* LaunchScreen.storyboard in Resources */,
 				FB4E7F4F218EAD91005BC547 /* Assets.xcassets in Resources */,
 				FB4E7F4D218EAD8E005BC547 /* Main.storyboard in Resources */,
@@ -130,12 +179,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EA38B4D2383354089C5D595E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-treehuggr/Pods-treehuggr-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-treehuggr/Pods-treehuggr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE7ECEAABB934D98F538FB46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-treehuggr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FB4E7F40218EAD8E005BC547 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FB4E7F4A218EAD8E005BC547 /* ViewController.swift in Sources */,
+				FB4E7F5E218EBE24005BC547 /* PayPalViewController.swift in Sources */,
 				FB4E7F48218EAD8E005BC547 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +369,7 @@
 		};
 		FB4E7F57218EAD91005BC547 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7674F08EA758F826EF4C8ED8 /* Pods-treehuggr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +388,7 @@
 		};
 		FB4E7F58218EAD91005BC547 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02F55917CDB86A7C7AF338A4 /* Pods-treehuggr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
