@@ -1,7 +1,40 @@
+<center><b>Save a tree ($0.20)</b>
+
+<p></p>
+
+<img src="tree.png" height=15%, width=10%>
+<p></p>
 <div id="paypal-button-container"></div>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCU3qzB5dm-_jtOwNtfJrdVdJi8gMJs21c",
+            authDomain: "treehuggr-30eb0.firebaseapp.com",
+            databaseURL: "https://treehuggr-30eb0.firebaseio.com",
+            projectId: "treehuggr-30eb0",
+            storageBucket: "treehuggr-30eb0.appspot.com",
+            messagingSenderId: "307905057910"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <script>
+        function addTreeToUser(userID) {
+
+            var currentVal = firebase.database().ref('users/').get(userID).valueOf();
+
+            firebase.database().ref('users/' + userID).set({
+                    treeCount: parseInt(currentVal)+1
+            });
+        }
+    </script>
+
+
 <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 
-<b>Save a tree (20¢)</b>
 
 <script>
     // Render the PayPal button
@@ -51,8 +84,11 @@
                          onAuthorize: function (data, actions) {
                          return actions.payment.execute()
                          .then(function () {
-                               window.alert('Payment Complete! The world is a better place because of your donation');
+                               addTreeToUser(actions.userId);
+                               window.alert('Thanks, ' + actions.payment.userDisplayName + '! The world is a better place because of your donation');
                                });
                          }
                          }, '#paypal-button-container');
     </script>
+
+    </center>
